@@ -1,0 +1,26 @@
+1. How do you prevent the user from submitting the form prematurely when the user hit enter?
+-------------Answer-----------------
+i can use a mehtod such as
+function validationFunction() {
+  $('input').each(function() {
+    ...
+
+  }
+  if(good) {
+    return true;
+  } 
+  return false;
+}
+
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if( (event.keyCode == 13) && (validationFunction() == false) ) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+
+2. How do you add validation and error messages to the form?
+-------------Answer-----------------
+I will add the javascript for validation that will display the error message in each box contained an error and added glyphicon tick or cross to make it more nice

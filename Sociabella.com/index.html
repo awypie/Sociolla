@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <style type="text/css">
+  	.padding-zero{
+  		padding: 0px;
+  	}
+  	.padding-8{
+  		padding: 8px
+  	}
+  	.padding-right-zero{
+  		padding-right: 0px;
+  	}
+  	.margin-right-25{
+  		margin-right: 25px;
+  	}
+  	.clear{
+  		clear: both;
+  	}
+  	footer{
+  		height:100px;
+  		background-color:#c3c3c3;
+  		margin-top:100px;
+  	}
+  </style>
+
+  <body>
+	<nav class="navbar navbar-default">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Website Logo</a>
+	      </div>
+	    <div class="nav navbar-right padding-8"> 
+	      <button type="submit" class="btn btn-default margin-right-25
+	     ">Submit</button>
+	      <button type="button" class="btn btn-default">Cancel</button>
+		</div>
+	  </div>
+	</nav>
+	<div class="container">
+		<div class="row">		
+			<div class="col-md-6">
+				<form role="form" action="" method="post" id="company-profile-form">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name">
+					</div>
+					<div class="form-group">
+						<label for="description">Description</label>
+						<textarea class="form-control" rows="5" id="description"></textarea>
+					</div>
+					<legend>Address</legend>
+			  		<div class="form-group">
+						<label for="street">Street</label>
+						<input type="text" class="form-control" id="street">
+					</div>
+					<div class="form-group">
+						<label for="city">City</label>
+						<input type="text" class="form-control" id="city">
+					</div>
+
+				  	<div class="form-group col-xs-8 padding-zero">
+					  	<label for="opt-province">Province</label>
+						<select class="form-control" id="opt-province">
+							<option>Select Province</option>
+							<option>DKI Jakarta</option>
+							<option>Jawa Barat</option>
+							<option>Jawa Tengah</option>
+						</select>
+					</div>
+					<div class="form-group col-xs-4 padding-right-zero">
+						<label for="postal-code">Postal Code</label>
+						<input type="text" class="form-control" id="postal-code">
+					</div>
+				</form>
+			</div>
+
+			<div class="col-md-6">
+				<form role="form" action="" method="post">
+				<legend>Ask Us</legend>
+					<div class="form-group col-xs-4 padding-zero">
+					  	<label for="opt-division">Division</label>
+						<select class="form-control" id="opt-division">
+							<option>Select Division</option>
+							<option>Technology</option>
+							<option>Finance</option>
+							<option>Human Resource</option>
+						</select>
+					</div>
+					<div class="clear"></div>
+				  <div class="form-group">
+				    <label for="name-guest">Name</label>
+				    <input type="text" class="form-control" id="name-guest">
+				  </div>
+				<div class="form-group">
+					<label for="question">Questions</label>
+					<textarea class="form-control" rows="5" id="question"></textarea>
+				</div>
+				<button type="submit" class="btn btn-default right-25">Send <span class="glyphicon glyphicon-send"></span></button>
+			  	</form>
+			</div>
+		</div>
+	</div>
+
+	<footer></footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
